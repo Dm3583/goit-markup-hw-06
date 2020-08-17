@@ -399,80 +399,80 @@
                 </ul>
             </div>
             <div class="subscription">
-                <form action="">
+                <form autocomplete="off">
                     <p class="footer-tagline">подпишитесь на рассылку</p>
                     <div class="submit display-flex">
                         <input type="text" name="email" id="email" placeholder="E-mail" class="email-input" />
-                        <button type="button" class="btn btn-action">
-                                            Подписаться
-                                            <svg class="icon" width="24" height="24">
-                                                <use href="./images/svg/sprite/sprite.svg#icon-send"></use>
-                                            </svg>
-                                        </button>
+                        <button type="submit" class="btn btn-action">
+                            Подписаться
+                            <svg class="icon" width="24" height="24">
+                                <use href="./images/svg/sprite/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
                     </div>
                 </form>
 
             </div>
         </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-    <div class="backdrop" data-modal></div>
-    <div class="modal">
-        <form autocomplete="off">
-            <button type="button" class="close-modal" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop" data-modal></div> -->
+        <div class="modal">
+            <form autocomplete="off">
+                <button type="button" class="close-modal" data-modal-close>
                 <svg width="18px" height="18px" class="icon">
                     <use href="./images/svg/sprite/sprite.svg#icon-close-modal"></use>
                 </svg>
             </button>
-            <p class="lead">Оставьте свои данные, мы вам перезвоним</p>
+                <p class="lead">Оставьте свои данные, мы вам перезвоним</p>
 
-            <div class="inp-wrapper margin">
-                <input type=" text" name="user-name" id="user-name" placeholder=" " class="modal-input ">
-                <label for="user-name" class="input-label">Имя</label>
-                <svg width="18px" height="18px" class="icon">
+                <div class="inp-wrapper margin">
+                    <input type=" text" name="user-name" id="user-name" placeholder=" " class="modal-input ">
+                    <label for="user-name" class="input-label">Имя</label>
+                    <svg width="18px" height="18px" class="icon">
                     <use href="./images/svg/sprite/sprite.svg#icon-person-modal"></use>
                 </svg>
-            </div>
-
-            <div class="inp-wrapper margin">
-                <input type="tel" name="user-phone" id="user-phone" placeholder=" " class="modal-input ">
-                <label for="user-phone" class="input-label">Телефон</label>
-                <svg width="18px" height="18px" class="icon">
-                    <use href="./images/svg/sprite/sprite.svg#icon-phone-modal"></use>
-                </svg>
-            </div>
-
-            <div class="inp-wrapper margin">
-                <input type="email" name="user-email" id="user-email" placeholder=" " class="modal-input ">
-                <label for="user-email" class="input-label">Почта</label>
-                <svg width="18px" height="18px" class="icon">
-                    <use href="./images/svg/sprite/sprite.svg#icon-email-modal"></use>
-                </svg>
-            </div>
-
-            <div class="inp-wrapper">
-
-                <textarea name="comment-box" id="comment-box" cols="30 " rows="10" placeholder="Введите текст" class="modal-input-text"></textarea>
-                <label for="comment-box" class="comment-input-label">Комментарий</label>
-            </div>
-
-            <div class="agreement-wrapper">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" name="agree" id="agree-checkbox" class="agreement-checkbox">
-                    <label for="agree-checkbox" class="checkbox-agree-checkbox"></label>
                 </div>
 
-                <p class="agreement">Соглашаюсь с рассылкой и принимаю
-                    <a href=" " class="agreement-link"> Условия договора</a>
-                </p>
-            </div>
-            <button type="submit" class="btn " data-modal-open>Отправить</button>
-        </form>
-    </div>
+                <div class="inp-wrapper margin">
+                    <input type="tel" name="user-phone" id="user-phone" placeholder=" " class="modal-input ">
+                    <label for="user-phone" class="input-label">Телефон</label>
+                    <svg width="18px" height="18px" class="icon">
+                    <use href="./images/svg/sprite/sprite.svg#icon-phone-modal"></use>
+                </svg>
+                </div>
+
+                <div class="inp-wrapper margin">
+                    <input type="email" name="user-email" id="user-email" placeholder=" " class="modal-input ">
+                    <label for="user-email" class="input-label">Почта</label>
+                    <svg width="18px" height="18px" class="icon">
+                    <use href="./images/svg/sprite/sprite.svg#icon-email-modal"></use>
+                </svg>
+                </div>
+
+                <div class="inp-wrapper">
+
+                    <textarea name="comment" id="comment-box" cols="30 " rows="10" placeholder="Введите текст" class="modal-input-text"></textarea>
+                    <label for="comment-box" class="comment-input-label">Комментарий</label>
+                </div>
+
+                <div class="agreement-wrapper">
+                    <label class="checkbox-label">
+                    <input class="checkbox visually-hidden" type="checkbox" name="agree" value="agree" /><span class="checkbox-icon"></span>
+                    
+                    <span class="checkbox-label">Соглашаюсь с рассылкой и принимаю &nbsp;</span>
+                    <a href=" " class="agreement-link">Условия договора</a>
+                </label>
+                </div>
+
+                <button type="submit" class="btn " data-modal-open>Отправить</button>
+
+            </form>
+        </div>
 
     </div>
 
-    <!-- <script src="./js/modal.js "></script> -->
+    <script src="./js/modal.js "></script>
 </body>
 
 </html>
