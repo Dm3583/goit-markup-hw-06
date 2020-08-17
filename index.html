@@ -290,69 +290,7 @@
                         </ul>
                     </li>
 
-                    <!-- <li class="employee-card">
-                        <img class="picture" src="./images/jpg/ivan_nikolaiev.jpg " alt="Иван Николаев фото " width="270 " />
 
-                        <h3 class="name-heading ">Иван Николаев</h3>
-                        <p lang="en " class="activity-description ">UI Designer</p>
-
-                        <ul class="list social-networks display-flex">
-                            <li>
-                                <a href=" " aria-label="инстаграм " class="img-link ">
-                                    <img src="./images/svg/social_networks/instagram.svg " alt="инстаграм " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="твиттер " class="img-link ">
-                                    <img src="./images/svg/social_networks/twitter.svg " alt="твиттер " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="фейсбук " class="img-link ">
-                                    <img src="./images/svg/social_networks/facebook.svg " alt="фейсбук " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="линкедин " class="img-link ">
-                                    <img src="./images/svg/social_networks/linkedin.svg " alt="линкедин " />
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-
-                    <li class="employee-card">
-                        <img class="picture" src="./images/jpg/ivan_nikolaiev.jpg " alt="Иван Николаев фото " width="270 " />
-
-                        <h3 class="name-heading ">Иван Николаев</h3>
-                        <p lang="en " class="activity-description ">UI Designer</p>
-
-                        <ul class="list social-networks display-flex">
-                            <li>
-                                <a href=" " aria-label="инстаграм " class="img-link ">
-                                    <img src="./images/svg/social_networks/instagram.svg " alt="инстаграм " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="твиттер " class="img-link ">
-                                    <img src="./images/svg/social_networks/twitter.svg " alt="твиттер " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="фейсбук " class="img-link ">
-                                    <img src="./images/svg/social_networks/facebook.svg " alt="фейсбук " />
-                                </a>
-                            </li>
-                            <li>
-                                <a href=" " aria-label="линкедин " class="img-link ">
-                                    <img src="./images/svg/social_networks/linkedin.svg " alt="линкедин " />
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -461,65 +399,80 @@
                 </ul>
             </div>
             <div class="subscription">
-                <p class="footer-tagline">подпишитесь на рассылку</p>
-                <div class="submit display-flex">
-                    <input type="text" name="email" id="email" placeholder="E-mail" class="email-input" />
-                    <button type="button" class="btn btn-action">
-                        Подписаться
-                        <svg class="icon" width="24" height="24">
-                            <use href="./images/svg/sprite/sprite.svg#icon-send"></use>
-                        </svg>
-                </button>
-                </div>
+                <form action="">
+                    <p class="footer-tagline">подпишитесь на рассылку</p>
+                    <div class="submit display-flex">
+                        <input type="text" name="email" id="email" placeholder="E-mail" class="email-input" />
+                        <button type="button" class="btn btn-action">
+                                            Подписаться
+                                            <svg class="icon" width="24" height="24">
+                                                <use href="./images/svg/sprite/sprite.svg#icon-send"></use>
+                                            </svg>
+                                        </button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+    <!-- <div class="backdrop is-hidden" data-modal> -->
+    <div class="backdrop" data-modal></div>
+    <div class="modal">
+        <form autocomplete="off">
             <button type="button" class="close-modal" data-modal-close>
-                <svg width="18px" height="18px" class="icon"><use href="./images/svg/sprite/sprite.svg#icon-close-modal"  ></use></svg>         
-                </button>
+                <svg width="18px" height="18px" class="icon">
+                    <use href="./images/svg/sprite/sprite.svg#icon-close-modal"></use>
+                </svg>
+            </button>
             <p class="lead">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="inp-wrapper">
 
-                <input type=" text " name="user-name" id="user-name" placeholder="" class="modal-input ">
+            <div class="inp-wrapper margin">
+                <input type=" text" name="user-name" id="user-name" placeholder=" " class="modal-input ">
                 <label for="user-name" class="input-label">Имя</label>
                 <svg width="18px" height="18px" class="icon">
                     <use href="./images/svg/sprite/sprite.svg#icon-person-modal"></use>
                 </svg>
             </div>
-            <div class="inp-wrapper">
 
-                <input type="text " name="user-phone" id="user-phone" placeholder="" class="modal-input ">
+            <div class="inp-wrapper margin">
+                <input type="tel" name="user-phone" id="user-phone" placeholder=" " class="modal-input ">
                 <label for="user-phone" class="input-label">Телефон</label>
                 <svg width="18px" height="18px" class="icon">
                     <use href="./images/svg/sprite/sprite.svg#icon-phone-modal"></use>
                 </svg>
             </div>
-            <div class="inp-wrapper">
 
-                <input type="text " name="user-email" id="user-email" placeholder="" class="modal-input ">
+            <div class="inp-wrapper margin">
+                <input type="email" name="user-email" id="user-email" placeholder=" " class="modal-input ">
                 <label for="user-email" class="input-label">Почта</label>
                 <svg width="18px" height="18px" class="icon">
                     <use href="./images/svg/sprite/sprite.svg#icon-email-modal"></use>
                 </svg>
             </div>
-            <textarea name="comment-box " id="comment-box " cols="30 " rows="10 " placeholder="Комментарий " class="modal-input-text "></textarea>
+
+            <div class="inp-wrapper">
+
+                <textarea name="comment-box" id="comment-box" cols="30 " rows="10" placeholder="Введите текст" class="modal-input-text"></textarea>
+                <label for="comment-box" class="comment-input-label">Комментарий</label>
+            </div>
+
             <div class="agreement-wrapper">
                 <div class="checkbox-wrapper">
                     <input type="checkbox" name="agree" id="agree-checkbox" class="agreement-checkbox">
-                    <label for="styled-agree-checkbox" class="checkbox-agree-checkbox"></label>
+                    <label for="agree-checkbox" class="checkbox-agree-checkbox"></label>
                 </div>
+
                 <p class="agreement">Соглашаюсь с рассылкой и принимаю
                     <a href=" " class="agreement-link"> Условия договора</a>
                 </p>
             </div>
-            <button type="button " class="btn " data-modal-open>Отправить</button>
-        </div>
+            <button type="submit" class="btn " data-modal-open>Отправить</button>
+        </form>
+    </div>
 
     </div>
 
-    <script src="./js/modal.js "></script>
+    <!-- <script src="./js/modal.js "></script> -->
 </body>
 
 </html>
