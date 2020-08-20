@@ -1057,7 +1057,8 @@ body {
 .modal .inp-wrapper>.icon {
     position: absolute;
     left: 16px;
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .modal .btn {
