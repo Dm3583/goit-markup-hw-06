@@ -1070,12 +1070,15 @@ body {
 /* chekbox */
 
 .modal .agreement-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .checkbox-label {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
