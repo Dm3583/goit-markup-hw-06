@@ -1187,6 +1187,47 @@ input[type="checkbox"]:checked
 /* #endregion */
 
 /* #region Mobile-menu */
+@media only screen and (min-width: 768px) {
+  .backdrop:has(.mobile-menu) {
+    display: none;
+  }
+}
+
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--common-black);
+  transition: var(--standard-transition);
+  transition-property: transform, color;
+}
+
+.mobile-menu .mobile-menu-btn {
+  color: #fff;
+  margin-left: auto;
+}
+
+@media not (hover: hover) {
+  .mobile-menu-btn:active {
+    transform: scale(0.96);
+    color: var(--pressed-state-color);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-btn-icon {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
